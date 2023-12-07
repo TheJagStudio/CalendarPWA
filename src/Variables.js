@@ -144,7 +144,7 @@ export const mainData = {
                     },
                     {
                         name: "Swami Vivekanand Jayanti",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -216,7 +216,7 @@ export const mainData = {
                     },
                     {
                         name: "Shattila Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                     {
                         name: "Shri Yogiji Maharaj Swadhamgaman Din Tithi",
@@ -528,7 +528,7 @@ export const mainData = {
                     },
                     {
                         name: "Swami Vivekanand Jayanti",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -600,7 +600,7 @@ export const mainData = {
                     },
                     {
                         name: "Shattila Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                     {
                         name: "Shri Yogiji Maharaj Swadhamgaman Din Tithi",
@@ -782,7 +782,7 @@ export const mainData = {
                     },
                     {
                         name: "Jaya Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -806,7 +806,7 @@ export const mainData = {
                     },
                     {
                         name: "Shri Vishwakarma Jayanti",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -934,7 +934,7 @@ export const mainData = {
                     },
                     {
                         name: "Shri Aksharvihari Swami Pragatya Din",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -948,7 +948,7 @@ export const mainData = {
                     },
                     {
                         name: "Vijaya Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "normalDate",
@@ -1068,7 +1068,7 @@ export const mainData = {
                     },
                     {
                         name: "Holashtak Betha",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -1290,7 +1290,7 @@ export const mainData = {
                     },
                     {
                         name: "Papmochani Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -1592,7 +1592,7 @@ export const mainData = {
                     },
                     {
                         name: "Swami Vivekanand Jayanti",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -1664,7 +1664,7 @@ export const mainData = {
                     },
                     {
                         name: "Shattila Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                     {
                         name: "Shri Yogiji Maharaj Swadhamgaman Din Tithi",
@@ -1846,7 +1846,7 @@ export const mainData = {
                     },
                     {
                         name: "Jaya Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -1870,7 +1870,7 @@ export const mainData = {
                     },
                     {
                         name: "Shri Vishwakarma Jayanti",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -1998,7 +1998,7 @@ export const mainData = {
                     },
                     {
                         name: "Shri Aksharvihari Swami Pragatya Din",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -2012,7 +2012,7 @@ export const mainData = {
                     },
                     {
                         name: "Vijaya Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "normalDate",
@@ -2132,7 +2132,7 @@ export const mainData = {
                     },
                     {
                         name: "Holashtak Betha",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
@@ -2354,7 +2354,7 @@ export const mainData = {
                     },
                     {
                         name: "Papmochani Ekadashi",
-                        color: "white",
+                        color: "red-400",
                     },
                 ],
                 type: "multipleDate",
