@@ -9,18 +9,36 @@ const EmptyDate = () => {
     return <div class="w-full"></div>;
 };
 
-const NormalDate = ({ events, setEventData, FullDate, SmallDate, Date, Day, color }) => {
+const NormalDate = ({ events, setSelectedDate, setEventData, FullDate, SmallDate, Date, Day, color }) => {
     return (
-        <div onClick={() => setEventData(events)} id={FullDate} data-date={SmallDate} class={"transition-all duration-700 w-full text-center truncate px-1 inline-block align-middle h-20 border-2 " + (color.includes("orange-400") ? "border-orange-400 dark:border-orange-400" : color.includes("blue-400") ? "border-blue-400 dark:border-blue-400" : "border-white dark:border-slate-700") + " rounded-lg hover:border-slate-800 dark:hover:border-white max-h-fit py-1 text-auto text-slate-800 dark:text-white overflow-hidden bg-" + color}>
+        <div
+            onClick={() => {
+                setEventData(events);
+                let date = SmallDate.split("/")[1] + " - " + SmallDate.split("/")[0] + " - " + SmallDate.split("/")[2];
+                setSelectedDate(date);
+            }}
+            id={FullDate}
+            data-date={SmallDate}
+            class={"transition-all duration-700 w-full text-center truncate px-1 inline-block align-middle h-20 border-2 " + (color.includes("orange-400") ? "border-orange-400 dark:border-orange-400" : color.includes("blue-400") ? "border-blue-400 dark:border-blue-400" : "border-white dark:border-slate-700") + " rounded-lg hover:border-slate-800 dark:hover:border-white max-h-fit py-1 text-auto text-slate-800 dark:text-white overflow-hidden bg-" + color}
+        >
             <div class="font-bold text-xl">{Date}</div>
             <div class="text-xs text-slate-500 dark:text-slate-400 truncate">{Day}</div>
         </div>
     );
 };
 
-const MultipleDate = ({ events, setEventData, FullDate, SmallDate, Date, Day, Event, color }) => {
+const MultipleDate = ({ events, setSelectedDate, setEventData, FullDate, SmallDate, Date, Day, Event, color }) => {
     return (
-        <div onClick={() => setEventData(events)} id={FullDate} data-date={SmallDate} class={"transition-all duration-700 w-full text-center truncate px-1 inline-block align-middle h-20 border-2 " + (color.includes("orange-400") ? "border-orange-400 dark:border-orange-400" : color.includes("blue-400") ? "border-blue-400 dark:border-blue-400" : "border-white dark:border-slate-700") + " rounded-lg hover:border-slate-800 dark:hover:border-white max-h-fit py-1 text-auto text-slate-800 dark:text-white overflow-hidden bg-" + color}>
+        <div
+            onClick={() => {
+                setEventData(events);
+                let date = SmallDate.split("/")[1] + " - " + SmallDate.split("/")[0] + " - " + SmallDate.split("/")[2];
+                setSelectedDate(date);
+            }}
+            id={FullDate}
+            data-date={SmallDate}
+            class={"transition-all duration-700 w-full text-center truncate px-1 inline-block align-middle h-20 border-2 " + (color.includes("orange-400") ? "border-orange-400 dark:border-orange-400" : color.includes("blue-400") ? "border-blue-400 dark:border-blue-400" : "border-white dark:border-slate-700") + " rounded-lg hover:border-slate-800 dark:hover:border-white max-h-fit py-1 text-auto text-slate-800 dark:text-white overflow-hidden bg-" + color}
+        >
             <div class="font-bold text-xl">{Date}</div>
             <div class="text-xs text-slate-500 dark:text-slate-400 truncate">{Day}</div>
             <div class="text-[8px] leading-3 text-blue-500 truncate">{Event}</div>
@@ -28,18 +46,36 @@ const MultipleDate = ({ events, setEventData, FullDate, SmallDate, Date, Day, Ev
     );
 };
 
-const TempleDate = ({ events, setEventData, FullDate, SmallDate, Date, color }) => {
+const TempleDate = ({ events, setSelectedDate, setEventData, FullDate, SmallDate, Date, color }) => {
     return (
-        <div onClick={() => setEventData(events)} id={FullDate} data-date={SmallDate} class={"transition-all duration-700 w-full text-center truncate px-1 inline-block align-middle h-20 border-2 " + (color.includes("orange-400") ? "border-orange-400 dark:border-orange-400" : color.includes("blue-400") ? "border-blue-400 dark:border-blue-400" : "border-white dark:border-slate-700") + " rounded-lg hover:border-slate-800 dark:hover:border-white max-h-fit py-1 text-auto text-slate-800 dark:text-white overflow-hidden bg-" + color}>
+        <div
+            onClick={() => {
+                setEventData(events);
+                let date = SmallDate.split("/")[1] + " - " + SmallDate.split("/")[0] + " - " + SmallDate.split("/")[2];
+                setSelectedDate(date);
+            }}
+            id={FullDate}
+            data-date={SmallDate}
+            class={"transition-all duration-700 w-full text-center truncate px-1 inline-block align-middle h-20 border-2 " + (color.includes("orange-400") ? "border-orange-400 dark:border-orange-400" : color.includes("blue-400") ? "border-blue-400 dark:border-blue-400" : "border-white dark:border-slate-700") + " rounded-lg hover:border-slate-800 dark:hover:border-white max-h-fit py-1 text-auto text-slate-800 dark:text-white overflow-hidden bg-" + color}
+        >
             <div class="font-bold text-xl">{Date}</div>
             <img src="/assets/SHA_logo.png" class="p-1 h-auto w-10  mx-auto" />
         </div>
     );
 };
 
-const ImageDate = ({ events, setEventData, FullDate, SmallDate, Date, Url, color }) => {
+const ImageDate = ({ events, setSelectedDate, setEventData, FullDate, SmallDate, Date, Url, color }) => {
     return (
-        <div onClick={() => setEventData(events)} id={FullDate} data-date={SmallDate} class={"transition-all duration-700 w-full text-center truncate px-1 inline-block align-middle h-20 border-2 " + (color.includes("orange-400") ? "border-orange-400 dark:border-orange-400" : color.includes("blue-400") ? "border-blue-400 dark:border-blue-400" : "border-white dark:border-slate-700") + " rounded-lg hover:border-slate-800 dark:hover:border-white max-h-fit py-1 text-auto text-slate-800 dark:text-white overflow-hidden bg-" + color}>
+        <div
+            onClick={() => {
+                setEventData(events);
+                let date = SmallDate.split("/")[1] + " - " + SmallDate.split("/")[0] + " - " + SmallDate.split("/")[2];
+                setSelectedDate(date);
+            }}
+            id={FullDate}
+            data-date={SmallDate}
+            class={"transition-all duration-700 w-full text-center truncate px-1 inline-block align-middle h-20 border-2 " + (color.includes("orange-400") ? "border-orange-400 dark:border-orange-400" : color.includes("blue-400") ? "border-blue-400 dark:border-blue-400" : "border-white dark:border-slate-700") + " rounded-lg hover:border-slate-800 dark:hover:border-white max-h-fit py-1 text-auto text-slate-800 dark:text-white overflow-hidden bg-" + color}
+        >
             <div class="font-bold text-xl">{Date}</div>
             <img src={Url} class="p-1 h-auto w-10  mx-auto" />
         </div>
@@ -53,6 +89,7 @@ const EventDate = ({ Event, color }) => {
 function App() {
     const [swiperMain, setSwiperMain] = useState(null);
     const [eventData, setEventData] = useState([]);
+    const [selectedDate, setSelectedDate] = useState("");
     var CalenderData = "";
     let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let today = new Date();
@@ -99,6 +136,7 @@ function App() {
         let day = today.getDate();
         let month = today.getMonth();
         let year = today.getFullYear();
+        setSelectedDate(day + " - " + (month + 1) + " - " + year);
         let date = day + "/" + monthNames[month] + "/" + year;
         let currentIndex = 0;
         for (let i = 0; i < Object.keys(mainData).length; i++) {
@@ -208,6 +246,14 @@ function App() {
                                             <p className="w-full text-center align-middle py-1-sm text-slate-500 dark:text-white/50">{mainData[year][month]["GujName"]}</p>
                                         </div>
                                         <div className="grid grid-cols-7 px-2 gap-1" key={yearIndex * 100 + monthIndex}>
+                                            <p className="w-full text-center text-blue-500 dark:text-blue-400 font-bold text-lg">Mon</p>
+                                            <p className="w-full text-center text-blue-500 dark:text-blue-400 font-bold text-lg">Tue</p>
+                                            <p className="w-full text-center text-blue-500 dark:text-blue-400 font-bold text-lg">Wed</p>
+                                            <p className="w-full text-center text-blue-500 dark:text-blue-400 font-bold text-lg">Thu</p>
+                                            <p className="w-full text-center text-blue-500 dark:text-blue-400 font-bold text-lg">Fri</p>
+                                            <p className="w-full text-center text-blue-500 dark:text-blue-400 font-bold text-lg">Sat</p>
+                                            <p className="w-full text-center text-blue-500 dark:text-blue-400 font-bold text-lg">Sun</p>
+
                                             {Array.from({ length: mainData[year][month].startEmpty }).map((item, index) => {
                                                 return <EmptyDate key={index} />;
                                             })}
@@ -248,13 +294,13 @@ function App() {
                                                     let smallDate = (monthNames.indexOf(month) + 1).toString() + "/" + day + "/" + year;
 
                                                     if (mainData[year][month][day].type === "normalDate") {
-                                                        return <NormalDate key={key} setEventData={setEventData} events={mainData[year][month][day]["events"]} FullDate={fullDate} SmallDate={smallDate} Date={day} Day={dayName} color={color} />;
+                                                        return <NormalDate key={key} setSelectedDate={setSelectedDate} setEventData={setEventData} events={mainData[year][month][day]["events"]} FullDate={fullDate} SmallDate={smallDate} Date={day} Day={dayName} color={color} />;
                                                     } else if (mainData[year][month][day].type === "multipleDate") {
-                                                        return <MultipleDate key={key} setEventData={setEventData} events={mainData[year][month][day]["events"]} FullDate={fullDate} SmallDate={smallDate} Date={day} Day={dayName} Event={event} color={color} />;
+                                                        return <MultipleDate key={key} setSelectedDate={setSelectedDate} setEventData={setEventData} events={mainData[year][month][day]["events"]} FullDate={fullDate} SmallDate={smallDate} Date={day} Day={dayName} Event={event} color={color} />;
                                                     } else if (mainData[year][month][day].type === "imageDate") {
-                                                        return <ImageDate key={key} setEventData={setEventData} events={mainData[year][month][day]["events"]} FullDate={fullDate} SmallDate={smallDate} Date={day} Url={mainData[year][month][day]["data"][0]} color={color} />;
+                                                        return <ImageDate key={key} setSelectedDate={setSelectedDate} setEventData={setEventData} events={mainData[year][month][day]["events"]} FullDate={fullDate} SmallDate={smallDate} Date={day} Url={mainData[year][month][day]["data"][0]} color={color} />;
                                                     } else if (mainData[year][month][day].type === "templeDate") {
-                                                        return <TempleDate key={key} setEventData={setEventData} events={mainData[year][month][day]["events"]} FullDate={fullDate} SmallDate={smallDate} Date={day} color={color} />;
+                                                        return <TempleDate key={key} setSelectedDate={setSelectedDate} setEventData={setEventData} events={mainData[year][month][day]["events"]} FullDate={fullDate} SmallDate={smallDate} Date={day} color={color} />;
                                                     } else {
                                                         return <p key={key}>{day}</p>;
                                                     }
@@ -273,7 +319,7 @@ function App() {
                 <div className="flex flex-nowrap justify-between py-3 mx-5">
                     <button className="bg-red-200 px-5 text-red-800 rounded-md border border-red-800">Info</button>
                     <h1 id="BelowDate" className="font-thin text-xl dark:text-white">
-                        {day} - {month} - {year}
+                        {selectedDate}
                     </h1>
                     <button
                         onClick={() => {
